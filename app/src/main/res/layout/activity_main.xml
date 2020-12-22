@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/label_daftar_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/daftar_hotel"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_dtl_time"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/colorPrimary"
+        android:gravity="center"
+        android:textColor="#54A4A6"
+        android:text="TextView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/card_view" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
